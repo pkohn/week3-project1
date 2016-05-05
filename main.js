@@ -8,6 +8,7 @@ var divideByTwo = function (number){
 	console.log(number/2);
 };
 
+console.log("");
 console.log("Question 1");
 divideByTwo(12000);
 
@@ -21,6 +22,7 @@ var greeting = function (name1, name2){
 	
 };
 
+console.log("");
 console.log("Question 2");
 greeting('Phil', 'Josh');
 
@@ -33,6 +35,7 @@ var totalPrice = function (ppu){
 	console.log("The total cost this month is " + (ppu * 6) + " dollars");
 };
 
+console.log("");
 console.log("Question 3");
 totalPrice(10);
 
@@ -60,6 +63,7 @@ for (i = 1; i < teammates.length; i+=2){
 
 var team = ["Harold", "Bob", "Sue", "Grady", "Notorious B.I.G.", "JavaCrypt", "Weird guy in the back", "Gary", "Carol", "Hipster Tim", "Janet"];
 
+console.log("");
 console.log("Question 4");
 chooseTeams(team);
       
@@ -70,21 +74,76 @@ chooseTeams(team);
 
 var quarter = function (number){
 	
-	console.log(number/4);
+	console.log("A quarter of " + number + " is " + number/4);
 };
 
+console.log("");
 console.log("Question 5");
 quarter(100);
 
 // 6. Define functions called "area" and "perimeter". They should both accept two parameters and calculate the area and perimeter of a rectangle.
 
+var area = function (lengthy, widthy){
+	
+	console.log("the area of the rectangle is " + lengthy * widthy);
+};
+
+var perimeter = function (length, width){
+	
+	console.log("the perimeter of the rectangle is " + (2*length + 2*width));
+};
+
+console.log("");
+console.log("Question 6");
+
+var inputLength = 6;
+var inputWidth = 8;
+
+area(inputLength, inputWidth);
+perimeter(inputLength, inputWidth);
+
+
 // 7. Write a function called "sleepings", it should accept one parameter, an integer called "hours".
 //    Write a conditional statement inside of the function. If the number of hours is more than 8, print a statement to the console about getting enough rest.
 //    If the number of hours is less than 8, print a statement recommending the user get more shut eye.
 
+console.log("");
+console.log("Question 7");
+
+
+var sleepings = function (hours){
+	if (hours > 8){
+		console.log("YAAY ENOUGH SLEEP!");
+	}
+	else {
+		console.log("SLEEP MORE :(");
+	}
+};
+
+sleepings(4);
+
+
 // 8. Prompt a user to enter a three digit number. Write a function that adds the numbers together.
 //    HINT: You may need to google how to turn a string into an integer. 
 //          Note: Strings can be treated as arrays too.
+
+console.log("");
+console.log("Question 8");
+
+
+var addNums = function (numberInputted){
+	
+	var threeDig = prompt("Please enter a 3 digit number!");
+	var digone = Math.floor((threeDig/100));
+	var digtwo = Math.floor(((threeDig - digone*100)/10));
+	var digthree = (threeDig - digone*100 - digtwo*10);
+	console.log(digone);
+	console.log(digtwo);
+	console.log(digthree);
+	console.log(digone + digtwo + digthree);
+};
+
+addNums();
 
 // 9. You've finally gotten around to counting the change in your piggy bank. Write a function that accepts four parameters (quarters, dimes, nickels, and pennies).
 //     The function should take each number of coins and multiply it times each coin's value.
