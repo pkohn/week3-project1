@@ -3,18 +3,78 @@
 // 1. Define a function called "divideByTwo". It should accept one parameter called "number".
 //    The function should divide the number by two and output the answer.
 
+var divideByTwo = function (number){
+	
+	console.log(number/2);
+};
+
+console.log("Question 1");
+divideByTwo(12000);
+
+
 // 2. Define a function called "greeting". It should accept two parameters, which will be names.
 //    The function should output the a greeting to both people.
+
+var greeting = function (name1, name2){
+
+	console.log("Hello " + name1 + " and " + name2 + "!");	
+	
+};
+
+console.log("Question 2");
+greeting('Phil', 'Josh');
 
 // 3. You use Amazon Subscribe & Save to have six cans of cashews automatically sent to you each month, but the price keeps changing.
 //    Write a function that takes the price per unit and calculates the total for you each month.
 
+
+var totalPrice = function (ppu){
+	
+	console.log("The total cost this month is " + (ppu * 6) + " dollars");
+};
+
+console.log("Question 3");
+totalPrice(10);
+
 // 4. Write a function that accepts the following array and separates the people into two teams.
 //    No names next to eachother in the array should be on the same team.
-      teammates = ["Harold", "Bob", "Sue", "Grady", "Notorious B.I.G.", "JavaCrypt", "Weird guy in the back", "Gary", "Carol", "Hipster Tim", "Janet"]
+      
+var team1 = [];
+var team2 = [];
+
+var chooseTeams = function (teammates){
+
+
+for (i = 0; i < teammates.length; i+=2){
+	
+	team1[i] = teammates[i];
+	console.log(team1);
+}
+
+for (i = 1; i < teammates.length; i+=2){
+	
+	team2[i] = teammates[i];
+	console.log(team2);
+}
+};
+
+var team = ["Harold", "Bob", "Sue", "Grady", "Notorious B.I.G.", "JavaCrypt", "Weird guy in the back", "Gary", "Carol", "Hipster Tim", "Janet"];
+
+console.log("Question 4");
+chooseTeams(team);
+      
+     
 
 // 5. Define a function called "quarter". It accepts one parameter called "number".
 //    The function will return a value which is one quarter of the number provided.
+
+var quarter = function (number){
+	
+	console.log(number/4);
+};
+
+console.log("Question 5");
+quarter(100);
 
 // 6. Define functions called "area" and "perimeter". They should both accept two parameters and calculate the area and perimeter of a rectangle.
 
