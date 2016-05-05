@@ -150,6 +150,19 @@ addNums();
 //     Finally, it should return the total amount of change you have in the following format: "$32.77"
 //     HINT: Googling the toFixed method will help you with the format.
 
+var piggyCounter = function (quarters, dimes, nickels, pennies){
+	var qVal = quarters*.25;
+	var dVal = dimes*.1;
+	var nVal = nickels*.05;
+	var pVal = pennies*.01;
+	var totalVal = qVal + dVal + nVal + pVal;
+	console.log("Congrats! You've saved up $" + totalVal.toFixed(2));
+};
+
+console.log("");
+console.log("Question 9");
+piggyCounter(2,2,3,4);
+
 // 10. Develop a function that determines a person's age by prompting them for their birth year.
 
 
