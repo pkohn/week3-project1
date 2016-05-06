@@ -165,6 +165,14 @@ piggyCounter(2,2,3,4);
 
 // 10. Develop a function that determines a person's age by prompting them for their birth year.
 
+console.log("");
+console.log("Question 10");
+
+var bday = prompt ("Whens your day?");
+//console.log(bday.getFullYear());
+
+console.log(new Date());
+
 
 // 11. Develop a function that cleans up a phone number entered by a user.
 //     The rules are as follows:
@@ -174,14 +182,34 @@ piggyCounter(2,2,3,4);
 //        If the phone number is 11 digits and the first number is not 1, then it is a bad number.
 //        HINT: You may need to use the charAt method.
 
+console.log("");
+console.log("Question 11");
+
 // 12. Create a function that determines whether a parameter is a number or not.
 //     Iterate over the elements in the following array to determine if each is a number.
 //     HINT: You may need to use the isNaN method.
-       arrayOfAllTheThings = ["one", 23, {thingsWhalesLove: "beaches"}, "six hundred", 33, 6834, "5,435"]
+
+var arrayOfAllTheThings = ["one", 23, {thingsWhalesLove: "beaches"}, "six hundred", 33, 6834, "5,435"];
+       
+var checkArray = function (array1){
+	
+	for (i=0; i < array1.length; i++){
+		if (isNaN(array1[i]) == 1){
+			console.log(array1[i] + " is not a number");
+		} else {
+			console.log(array1[i] + " is a number");
+		}
+	}
+};
+
+console.log("");
+console.log("Question 12");
+checkArray(arrayOfAllTheThings);
 
 // 13. Create a die rolling function that accepts no parameters.
 //     It rolls two six-sided-dice, adds the two numbers together, and returns a roll value.
 //     To get the random number rolled by each die, use Math.random and Math.floor.
+
 
 // 14. Using your die roll function above, figure out how many times it would take a user
 //     to get around a Monopoly board once. A monopoly board has 40 spaces total.
